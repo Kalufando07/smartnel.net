@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTNEL | Contactez-Nous</title>
+    <link rel="stylesheet" href="../CSS/Contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">SMARTNEL</label>
+        <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="About.html">À Propos</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li class="active"><a href="">Contact</a></li>
+            <li><a href="./realisation.html">Realisations</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="page-intro contact-hero">
+            <div class="intro-content">
+                <h1>Contactez notre équipe !</h1>
+                <p>Besoin d'un devis, d'informations sur nos services ou d'un support technique ? Remplissez le formulaire ci-dessous ou utilisez nos coordonnées.</p>
+            </div>
+        </section>
+
+        <section class="contact-main-section">
+            <div class="contact-content-wrapper">
+                <div class="contact-form-container">
+                    <h2>Faire une demande de service ou produit</h2>
+                    <form action="#" method="POST" class="main-contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom Complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone (Optionnel)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Objet de la demande *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-interest">Type de Service/Produit qui vous intéresse *</label>
+                            <select id="service-interest" name="service_interest" required>
+                                <option value="">-- Sélectionnez un service --</option>
+                                <option value="Developpement Mobile">Développement Mobile</option>
+                                <option value="Developpement Web">Développement Web</option>
+                                <option value="Developpement Desktop">Développement Desktop</option>
+                                <option value="Marketing Digital">Marketing Digital</option>
+                                <option value="Audit & Conseil SI">Installation Système d'Exploitation</option>
+                                <option value="Vente Accessoires Informatiques">Vente d'Accessoires Informatiques</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Votre Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn send-btn">Envoyer la Demande</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-container">
+                    <h2>Nos Coordonnées</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Av Des Oliviers, 41, Kinshasa, RDC</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+243 894592426</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:smartnel.we@gmail.net">smartnel77@gmail.com</a></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Lun - Ven: 9h00 - 17h00</p>
+                    </div>
+                    
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/profile.php?id=61553861758310&sk=directory_personal_details" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/smartnel_soft/?hl=fr" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="map-section">
+                <h2>Où nous trouver</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.5002934825964!2d15.297426615024765!3d-4.321303896000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3b2b4e7c3e53%3A0x6b4c3e536c4c3e53!2sAv%20Des%20Oliviers%2C%2041%2C%20Kinshasa%2C%20RDC!5e0!3m2!1sfr!2scd!4v1678901234567!5m2!1sfr!2scd" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section footer-section_about">
+                <h2>À propos</h2>
+                <p>
+                    Transformez votre vision numérique en réalité avec notre expertise en développement web et en solutions technologiques sur mesure.
+                    Ensemble, nous façonnons l'avenir numérique de votre entreprise.
+                </p>
+            </div>
+            <div class="footer-section footer-links">
+                <h2>Adresse & Contact</h2>
+                <div>
+                    <span class="fas fa-map-marker-alt"></span>
+                    <span class="texte">  41, Av Des Oliviers</span>
+                </div>
+                <div class="Tel">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="texte"> +243 98 55 69 495</span>
+                </div>
+                <div class="Email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="texte"><a href="mailto:smartnel.we@gmail.net">smartnel77@gmail.com</a></span>
+                </div>
+            </div>
+            <div class="footer-section footer-contact">
+                <h2 class="titlecontat">Contactez-nous</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="footer-email">Email *</label>
+                        <input type="email" id="footer-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="footer-message">Message *</label>
+                        <textarea id="footer-message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn send-btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © Smartnel 2026. Tous droits réservés.
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>         
+</body>
+</html>

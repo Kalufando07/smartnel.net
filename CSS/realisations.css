@@ -1,0 +1,84 @@
+/* ==========================================================
+   SMARTNEL — STYLE SPÉCIFIQUE À LA PAGE RÉALISATIONS
+   À lier APRÈS index.css (il utilise ses variables et composants) :
+   <link rel="stylesheet" href="../CSS/index.css">
+   <link rel="stylesheet" href="../CSS/realisations.css">
+   ========================================================== */
+
+/* ---------- FILTRES ---------- */
+.projects-section { padding-bottom: 40px; } 
+
+.projects-section > .section-title { margin-bottom: 36px; }
+
+.filters-container {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;
+  max-width: 860px; margin: 0 auto 50px;
+}
+
+.filter-btn {
+  padding: 10px 22px; border-radius: 50px; cursor: pointer;
+  background: var(--bg-card); border: 1px solid var(--border);
+  color: var(--text); font-weight: 500; font-size: .92rem; white-space: nowrap;
+  transition: background .3s, color .3s, border-color .3s, transform .3s, box-shadow .3s;
+}
+.filter-btn:hover { border-color: var(--border-strong); color: var(--white); transform: translateY(-2px); }
+.filter-btn.active {
+  background: var(--gradient); color: var(--on-primary); border-color: transparent;
+  font-weight: 600; box-shadow: var(--glow);
+}
+
+/* ---------- GRILLE DE PROJETS ---------- */
+.projects-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 28px;
+}
+
+.project-card {
+  display: flex; flex-direction: column; padding: 0; overflow: hidden;
+}
+.project-card[hidden] { display: none; }
+
+/* Zone image : un dégradé avec icône s'affiche si l'image est absente */
+.project-thumb {
+  position: relative; height: 210px; overflow: hidden;
+  display: grid; place-items: center;
+  background: var(--gradient-soft); border-bottom: 1px solid var(--border);
+}
+.project-thumb > i { font-size: 3.2rem; color: var(--primary); opacity: .45; }
+.project-thumb img {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  object-fit: cover; transition: transform .5s ease;
+}
+.project-thumb::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, transparent 55%, rgba(2, 11, 45, .55));
+}
+.project-card:hover .project-thumb img { transform: scale(1.07); }
+
+.project-content { display: flex; flex-direction: column; flex: 1; padding: 26px; }
+.project-category { align-self: flex-start; margin-bottom: 14px; }
+.project-content h3 { font-size: 1.25rem; line-height: 1.3; margin-bottom: 10px; }
+.project-description { flex: 1; color: var(--text); font-size: .95rem; margin-bottom: 20px; }
+
+.btn-details {
+  align-self: flex-start; display: inline-flex; align-items: center; gap: 8px;
+  color: var(--secondary); font-weight: 600; font-size: .95rem; text-decoration: none;
+  transition: color .3s, gap .3s;
+}
+.btn-details:hover { color: var(--white); gap: 14px; }
+
+/* Message quand une catégorie n'a pas encore de projet */
+.projects-empty {
+  text-align: center; max-width: 520px; margin: 10px auto 0; padding: 40px 30px;
+  background: var(--bg-card); border: 1px dashed var(--border-strong); border-radius: var(--radius);
+  color: var(--text);
+}
+.projects-empty[hidden] { display: none; }
+.projects-empty i { font-size: 2.2rem; color: var(--primary); margin-bottom: 14px; }
+.projects-empty p { margin-bottom: 22px; }
+
+@media (max-width: 576px) {
+  .filters-container { gap: 8px; margin-bottom: 36px; }
+  .filter-btn { padding: 9px 16px; font-size: .85rem; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .project-thumb { height: 190px; }
+}

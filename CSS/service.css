@@ -1,0 +1,54 @@
+/* ==========================================================
+   SMARTNEL — STYLE SPÉCIFIQUE À LA PAGE SERVICES
+   À lier APRÈS index.css (il utilise ses variables et composants) :
+   <link rel="stylesheet" href="../CSS/index.css">
+   <link rel="stylesheet" href="../CSS/service.css">
+   ========================================================== */
+
+/* Texte de présentation */
+.presentation-intro {
+  max-width: 860px; margin: 0 auto 80px; padding: 32px 38px; text-align: center;
+  background: var(--gradient-soft); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); color: var(--text); font-size: 1.08rem;
+}
+
+/* Groupes de services */
+.service-category { margin-bottom: 70px; }
+
+.category-head { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+.category-head .icon-box { flex: none; width: 56px; height: 56px; margin: 0; font-size: 1.4rem; border-radius: 16px; }
+.category-head h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 1.2; }
+.category-head p { color: var(--muted); font-size: .92rem; line-height: 1.4; }
+.category-head::after {
+  content: ""; flex: 1; height: 1px; margin-left: 10px;
+  background: linear-gradient(90deg, var(--border-strong), transparent);
+}
+
+.services-list {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;
+}
+
+/* Carte de service (utilise .card et .icon-box de index.css) */
+.service-item { display: flex; flex-direction: column; }
+.service-item h3 { font-size: 1.15rem; margin-bottom: 10px; }
+.service-item p { flex: 1; color: var(--text); font-size: .95rem; }
+
+/* Bouton WhatsApp des cartes */
+.btn-whatsapp {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  margin-top: 24px; padding: 12px 22px; border-radius: 50px;
+  border: 1.5px solid rgba(37, 211, 102, .55); background: rgba(37, 211, 102, .08);
+  color: #4AE37F; font-weight: 600; font-size: .92rem; text-decoration: none;
+  transition: background .3s, color .3s, border-color .3s, transform .3s, box-shadow .3s;
+}
+.btn-whatsapp i { font-size: 1.15rem; }
+.btn-whatsapp:hover {
+  background: #25D366; border-color: #25D366; color: #052E16;
+  transform: translateY(-3px); box-shadow: 0 10px 25px rgba(37, 211, 102, .35);
+}
+
+@media (max-width: 576px) {
+  .presentation-intro { padding: 24px 22px; margin-bottom: 60px; }
+  .category-head::after { display: none; }
+  .btn-whatsapp { width: 100%; }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTNEL | Nos Réalisations</title>
+    <meta name="description" content="Découvrez les projets récents de SMARTNEL : sites web, applications mobiles, logiciels desktop et marketing digital.">
+    <meta name="theme-color" content="#020B2D">
+
+    <!-- Active les animations seulement si JavaScript fonctionne -->
+    <script>document.documentElement.classList.add('js');</script>
+
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/realisations.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="../JS/main.js" defer></script>
+    <script src="../JS/realisations.js" defer></script>
+</head>
+
+<body>
+
+    <!-- FOND -->
+    <div class="particles" aria-hidden="true"></div>
+
+    <!-- EN-TÊTE -->
+    <header>
+        <nav class="navbar" aria-label="Navigation principale">
+
+            <a href="index.html" class="logo" aria-label="SMARTNEL - Accueil">
+                <img src="../IMAGES/logo final smarnel Business.png" alt="SMARTNEL">
+            </a>
+
+            <ul class="nav-menu" id="menu">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="About.html">À propos</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="realisation.html" class="active">Réalisations</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li class="nav-cta-mobile"><a href="Contact.html" class="btn-nav">Demander un devis</a></li>
+            </ul>
+
+            <a href="Contact.html" class="btn-nav">Demander un devis</a>
+
+            <button class="hamburger" type="button" aria-label="Ouvrir le menu" aria-controls="menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- TITRE DE LA PAGE -->
+        <section class="page-hero">
+            <div class="container reveal">
+                <div class="breadcrumb">
+                    <a href="index.html">Accueil</a> <span>/</span> <span>Réalisations</span>
+                </div>
+                <h1>Nos Réalisations</h1>
+                <p>Quand l'Innovation Numérique se Mesure en Succès Client.</p>
+            </div>
+        </section>
+
+        <!-- PROJETS -->
+        <section class="container projects-section">
+
+            <div class="section-title reveal">
+                <span>PORTFOLIO</span>
+                <h2>Découvrez nos Projets Récents</h2>
+            </div>
+
+            <div class="filters-container reveal" role="group" aria-label="Filtrer les projets">
+                <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">Tous</button>
+                <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Développement Web</button>
+                <button type="button" class="filter-btn" data-filter="mobile" aria-pressed="false">Développement Mobile</button>
+                <button type="button" class="filter-btn" data-filter="desktop" aria-pressed="false">Desktop</button>
+                <button type="button" class="filter-btn" data-filter="marketing" aria-pressed="false">Marketing Digital</button>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="card project-card reveal" data-category="web">
+                    <div class="project-thumb">
+                        <i class="fas fa-globe"></i>
+                        <img src="../IMAGES/votre_image_web.jpg" alt="Capture d'écran du projet E-Commerce Maison Du Bio" loading="lazy" onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-content">
+                        <span class="tag project-category">Développement Web</span>
+                        <h3>E-Commerce « Maison Du Bio »</h3>
+                        <p class="project-description">Refonte complète d'une plateforme e-commerce. Le défi était d'optimiser l'UX pour augmenter le taux de conversion de 35%.</p>
+                        <a href="#" class="btn-details">Voir le Cas d'Étude <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="card project-card reveal" data-category="mobile" data-delay="1">
+                    <div class="project-thumb">
+                        <i class="fas fa-mobile-alt"></i>
+                        <img src="../IMAGES/page home.jpg" alt="Capture d'écran de l'application mobile d'achat de crédit électrique" loading="lazy" onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-content">
+                        <span class="tag project-category">Développement Mobile</span>
+                        <h3>Application « SNEL &amp; MOI »</h3>
+                        <p class="project-description">Création d'une application native iOS/Android d'achat de crédit électrique via le mobile money.</p>
+                        <a href="#" class="btn-details">Voir le Cas d'Étude <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="card project-card reveal" data-category="desktop" data-delay="2">
+                    <div class="project-thumb">
+                        <i class="fas fa-desktop"></i>
+                        <img src="../IMAGES/votre_image_desktop.jpg" alt="Capture d'écran de l'application de gestion d'inventaire" loading="lazy" onerror="this.style.display='none'">
+                    </div>
+                    <div class="project-content">
+                        <span class="tag project-category">Application Desktop</span>
+                        <h3>Logiciel de Gestion d'Inventaire</h3>
+                        <p class="project-description">Conception d'un logiciel robuste pour Windows optimisant la gestion des stocks pour une PME. Vitesse et fiabilité maximales.</p>
+                        <a href="#" class="btn-details">Voir le Cas d'Étude <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Affiché quand une catégorie n'a pas encore de projet -->
+            <div class="projects-empty" hidden>
+                <i class="fas fa-folder-open"></i>
+                <p>Aucun projet à afficher dans cette catégorie pour le moment. Parlons du vôtre !</p>
+                <a href="Contact.html" class="btn-primary">Démarrer un projet</a>
+            </div>
+
+        </section>
+
+        <!-- APPEL À L'ACTION -->
+        <section class="cta reveal">
+
+            <div class="cta-content">
+                <h2>Prêt à transformer votre vision ?</h2>
+                <p>
+                    Nos réalisations témoignent de notre expertise. Contactez Smartnel
+                    pour discuter de vos besoins spécifiques et commencer à bâtir
+                    votre succès numérique.
+                </p>
+            </div>
+
+            <a href="Contact.html" class="btn-primary">
+                Démarrer votre Projet <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>SMARTNEL</h3>
+                <p>
+                    Votre partenaire de confiance pour toutes vos
+                    solutions digitales et informatiques.
+                </p>
+            </div>
+
+            <div>
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="realisation.html">Réalisations</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Nos Services</h3>
+                <ul>
+                    <li><a href="Services.html#developpement">Développement</a></li>
+                    <li><a href="Services.html#marketing-conseil">Marketing Digital</a></li>
+                    <li><a href="Services.html#reseaux-sociaux">Facebook & YouTube</a></li>
+                    <li><a href="Services.html#materiel-formation">Matériel & Formation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> <a href="tel:+243985569495">+243 98 55 69 495</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:smartnel77@gmail.com">smartnel77@gmail.com</a></p>
+                <p><i class="fas fa-location-dot"></i> 41, Av Des Oliviers, Kinshasa, RDC</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 SMARTNEL. Tous droits réservés.
+        </div>
+
+    </footer>
+
+    <!-- WHATSAPP (0985569495) -->
+    <a href="https://wa.me/243985569495?text=Bonjour%20SMARTNEL%2C%20j%27ai%20vu%20vos%20r%C3%A9alisations%20et%20je%20souhaite%20discuter%20d%27un%20projet."
+       class="whatsapp" target="_blank" rel="noopener" aria-label="Discuter sur WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
